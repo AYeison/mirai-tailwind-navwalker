@@ -4,15 +4,17 @@ This is custom nav_walker with tailwind classes and alpinejs attributtes.
 
 
 
-//##########add to file###########
-$url = '/src/tailwind-navwalker.php';
-   
-require get_template_directory() . $url;
+//##########add to file en your folder ###########
 
 //############setting wp_nav_menu ################
-     
-                            $mwalker = new Mirai_Tailwind_Navwalker();
+                                    //call to file in your functions.php
+                                       $url = '/src/tailwind-navwalker.php';
+                                    require get_template_directory() . $url;
+                                    
+                                      //declarete the custom walker
 
+                            $mwalker = new Mirai_Tailwind_Navwalker();
+                           //setting menu
                             wp_nav_menu(array(             
                                 'depth'	 => 2,
                                 'walker' => $mwalker,

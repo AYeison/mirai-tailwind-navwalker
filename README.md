@@ -7,9 +7,7 @@ This is custom nav_walker with tailwind classes and alpinejs attributtes.
 //##########add to file en your folder ###########
 
 //############setting wp_nav_menu ################
-                                    //call to file in your functions.php
-                                       $url = '/src/tailwind-navwalker.php';
-                                    require get_template_directory() . $url;
+                                 
                                     
                                       //declarete the custom walker
 
